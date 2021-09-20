@@ -8,10 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var sliderValue = Float.random(in: 0...100)
+    @State private var showAlert = false
+    var targetValue = Int.random(in: 0...100)
+    var changableValue = Int.random(in: 0...100)
+    
+    
+    
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            Text("Put the slider to \(targetValue)")
+                .padding()
+            HStack {
+                TextView(textValue: "0")
+                UISliderView(value: $sliderValue)
+                    .padding()
+                    .accentColor(.black)
+                TextView(textValue: "100")
+            }
             .padding()
+            ButtonView(title: "Check result") {
+                self.showAlert.toggle()
+            }
+            .alert(isPresented: $showAlert, content: {
+                Alert(title: Text("Your score is"), message: Text("\(computeScore())%"))
+            })
+            .padding()
+            ButtonView(title: "Start again") {
+                
+            }
+                
+        }
+        
     }
+    
+// func reset slider value when showalert = true
+    
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(Double(Int(sliderValue))))
+        let result = 100 - difference
+        return result
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

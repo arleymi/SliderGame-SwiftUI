@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97C79DC826F4CF8B00CEDE56 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C79DC726F4CF8B00CEDE56 /* TextView.swift */; };
 		97E09BD926F46B4700416707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E09BD826F46B4700416707 /* AppDelegate.swift */; };
 		97E09BDB26F46B4700416707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E09BDA26F46B4700416707 /* SceneDelegate.swift */; };
 		97E09BDD26F46B4700416707 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E09BDC26F46B4700416707 /* ContentView.swift */; };
 		97E09BDF26F46B4800416707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E09BDE26F46B4800416707 /* Assets.xcassets */; };
 		97E09BE226F46B4800416707 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E09BE126F46B4800416707 /* Preview Assets.xcassets */; };
 		97E09BE526F46B4800416707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E09BE326F46B4800416707 /* LaunchScreen.storyboard */; };
+		97E09BED26F46BEA00416707 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E09BEC26F46BEA00416707 /* ButtonView.swift */; };
+		97E09BF126F46FBC00416707 /* UISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E09BF026F46FBC00416707 /* UISliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97C79DC726F4CF8B00CEDE56 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		97E09BD526F46B4700416707 /* SliderGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E09BD826F46B4700416707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97E09BDA26F46B4700416707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		97E09BE126F46B4800416707 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97E09BE426F46B4800416707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97E09BE626F46B4800416707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E09BEC26F46BEA00416707 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		97E09BF026F46FBC00416707 /* UISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				97E09BD826F46B4700416707 /* AppDelegate.swift */,
 				97E09BDA26F46B4700416707 /* SceneDelegate.swift */,
 				97E09BDC26F46B4700416707 /* ContentView.swift */,
+				97E09BEC26F46BEA00416707 /* ButtonView.swift */,
+				97C79DC726F4CF8B00CEDE56 /* TextView.swift */,
+				97E09BF026F46FBC00416707 /* UISliderView.swift */,
 				97E09BDE26F46B4800416707 /* Assets.xcassets */,
 				97E09BE326F46B4800416707 /* LaunchScreen.storyboard */,
 				97E09BE626F46B4800416707 /* Info.plist */,
@@ -146,8 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E09BD926F46B4700416707 /* AppDelegate.swift in Sources */,
+				97E09BF126F46FBC00416707 /* UISliderView.swift in Sources */,
 				97E09BDB26F46B4700416707 /* SceneDelegate.swift in Sources */,
+				97C79DC826F4CF8B00CEDE56 /* TextView.swift in Sources */,
 				97E09BDD26F46B4700416707 /* ContentView.swift in Sources */,
+				97E09BED26F46BEA00416707 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
