@@ -11,8 +11,8 @@ struct ContentView: View {
     
     @State private var sliderValue = Float.random(in: 0...100)
     @State private var showAlert = false
-    var targetValue = Int.random(in: 0...100)
-    var changableValue = Int.random(in: 0...100)
+    @State var targetValue = Int.random(in: 0...100)
+    @State var changableValue = Int()
     
     
     
@@ -36,7 +36,8 @@ struct ContentView: View {
             })
             .padding()
             ButtonView(title: "Start again") {
-                
+                changableValue = Int.random(in: 0...100)
+                targetValue = changableValue
             }
                 
         }
